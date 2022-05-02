@@ -18,13 +18,13 @@ main {
     background-repeat: no-repeat;
   }
   #hero:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
-    background: #ECEFFE;
-    opacity: .9;
+    background: #eceffe;
+    opacity: 0.9;
     top: 0;
     left: 0;
     z-index: -10;
@@ -136,6 +136,7 @@ main {
   }
   #hero .business-casual {
     right: 2.5em;
+    transform: scaleX(-1);
   }
 }
 /* Large Desktop */
@@ -272,4 +273,18 @@ main {
     box-shadow: none;
   }
 }
+/* Large Desktop */
+/*-- -------------------------- -->
+<---           section          -->
+<--- -------------------------- -*/
+/* Mobile */
+/* Tablet */
+/* Small Desktop */
+/* Large Desktop */
+/*-- -------------------------- -->
+<---           section          -->
+<--- -------------------------- -*/
+/* Mobile */
+/* Tablet */
+/* Small Desktop */
 /* Large Desktop */
