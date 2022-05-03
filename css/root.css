@@ -162,6 +162,13 @@
     -o-transition: 0.2s ease;
     transition: 0.2s ease;
   }
+  .button-solid2 {
+    background-color: #10625e;
+    width: 10em;
+  }
+  .button-solid2::before {
+    background: var(--primary);
+  }
   .button-transparent {
     display: inline-block;
     background: transparent;
