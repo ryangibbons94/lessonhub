@@ -395,6 +395,9 @@
     top: 1.1em;
   }
   /* Navigation Links */
+  .dark {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(254deg) brightness(108%) contrast(100%);
+  }
   .mobile-wrapper img {
     height: 3.9em;
     margin-top: 0.25em;
@@ -548,7 +551,7 @@
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(254deg) brightness(108%) contrast(100%);
   }
   .navbar-menu .nav-logo img {
-    height: 7.5em;
+    height: 4em;
   }
   .navbar-menu .nav-logo img.light {
     display: block;
@@ -712,10 +715,11 @@
   #footer .left-section .logo {
     display: block;
     margin: auto;
-    width: 14.65em;
+    width: 15em;
     height: auto;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     text-align: center;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(254deg) brightness(108%) contrast(100%);
   }
   #footer .left-section .logo img {
     width: 100%;

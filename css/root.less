@@ -460,7 +460,10 @@
   }
 
   /* Navigation Links */
-
+  .dark {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(254deg)
+      brightness(108%) contrast(100%);
+  }
   .mobile-wrapper img {
     height: 78/20em;
     margin-top: 5/20em;
@@ -635,7 +638,7 @@
       }
 
       img {
-        height: 150/20em;
+        height: 80/20em;
 
         &.light {
           display: block;
@@ -819,10 +822,12 @@
       .logo {
         display: block;
         margin: auto;
-        width: 293/20em;
+        width: 300/20em;
         height: auto;
-        margin-bottom: 30/20em;
+        margin-bottom: 20/20em;
         text-align: center;
+        filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(254deg)
+          brightness(108%) contrast(100%);
 
         img {
           width: 100%;
