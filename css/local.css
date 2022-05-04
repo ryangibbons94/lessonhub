@@ -275,10 +275,45 @@ main {
 }
 /* Large Desktop */
 /*-- -------------------------- -->
-<---           section          -->
+<---           About            -->
 <--- -------------------------- -*/
 /* Mobile */
+@media only screen and (min-width: 0em) {
+  .about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+  }
+  .about .right h2.sectionTitle {
+    text-align: center;
+  }
+  .about .right p {
+    max-width: 500px;
+  }
+}
 /* Tablet */
+@media only screen and (min-width: 48em) {
+  .about {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about .right {
+    padding: 2em;
+  }
+}
 /* Small Desktop */
 /* Large Desktop */
 /*-- -------------------------- -->
