@@ -383,15 +383,53 @@ main {
 }
 
 /*-- -------------------------- -->
-<---           section          -->
+<---           save             -->
 <--- -------------------------- -*/
 
 /* Mobile */
 @media only screen and (min-width: 0em) {
+  .save {
+    img {
+      display: none;
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20/20em;
+
+      h2.sectionTitle {
+        text-align: center;
+      }
+      p {
+        max-width: 500px;
+      }
+    }
+  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 48em) {
+  .save {
+    img {
+      display: block;
+    }
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    .right {
+      padding: 40/20em;
+    }
+  }
 }
 
 /* Small Desktop */
