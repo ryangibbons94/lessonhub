@@ -125,6 +125,7 @@ main {
     position: absolute;
     right: 0;
     top: -3.5em;
+    transform: scaleX(-1);
   }
 }
 /* Small Desktop */
@@ -136,7 +137,6 @@ main {
   }
   #hero .business-casual {
     right: 2.5em;
-    transform: scaleX(-1);
   }
 }
 /* Large Desktop */
@@ -355,6 +355,9 @@ main {
     flex-direction: row-reverse;
     justify-content: space-evenly;
   }
+  .save .left {
+    transform: scaleX(-1);
+  }
   .save img {
     display: block;
   }
@@ -374,6 +377,9 @@ main {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+  }
+  .share img {
+    display: none;
   }
   .share .left {
     display: flex;
@@ -400,6 +406,9 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
   }
+  .share img {
+    display: block;
+  }
   .share .right {
     padding: 2em;
   }
@@ -407,48 +416,115 @@ main {
 /* Small Desktop */
 /* Large Desktop */
 /*-- -------------------------- -->
-<---           save             -->
+<---           discover         -->
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-  .save {
+  .discover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
   }
-  .save img {
+  .discover img {
     display: none;
   }
-  .save .left {
+  .discover .left {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .save .right {
+  .discover .right {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 1em;
   }
-  .save .right h2.sectionTitle {
+  .discover .right h2.sectionTitle {
     text-align: center;
+    margin-bottom: 0;
   }
-  .save .right p {
+  .discover .right p {
     max-width: 500px;
+  }
+  .discover .animated-bar {
+    background-color: var(--primary);
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    width: 175px;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+  }
+  .discover .animated-bar::after {
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: barAnimation;
+    -webkit-animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: white;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 12px;
+  }
+  @keyframes barAnimation {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
   }
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
-  .save {
+  .discover {
     flex-direction: row-reverse;
     justify-content: space-evenly;
   }
-  .save img {
+  .discover img {
     display: block;
   }
-  .save .right {
+  .discover .left {
+    position: relative;
+    transform: scaleX(-1);
+  }
+  .discover .left:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 70%;
+    width: 60%;
+    background: var(--primary);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .discover .left:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 170%;
+    width: 150%;
+    background: url("/images/content-circles.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    top: -18.75em;
+    left: 2.5em;
+    z-index: -2;
+  }
+  .discover .right {
     padding: 2em;
   }
 }
