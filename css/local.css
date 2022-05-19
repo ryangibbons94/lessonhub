@@ -527,6 +527,16 @@ main {
   .discover .right {
     padding: 2em;
   }
+  .discover .list-items-entire-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .discover .list-items-entire-list .list-item i {
+    margin-right: 1em;
+    font-size: 2em;
+  }
 }
 /* Small Desktop */
 /* Large Desktop */

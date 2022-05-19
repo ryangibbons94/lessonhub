@@ -146,7 +146,7 @@
     margin: auto;
     text-align: center;
     text-decoration: none;
-    background: var(--primary);
+    background: black;
     line-height: 53/20;
     width: 162/18em;
     border-radius: 3/18em;
@@ -160,25 +160,23 @@
     position: relative;
     z-index: 1;
 
-    &:before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 0%;
-      background: #10625e;
-      opacity: 1;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      border-radius: 3/18em;
-      transition: width 0.3s;
-    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   display: block;
+    //   height: 100%;
+    //   width: 0%;
+    //   background: #10625e;
+    //   opacity: 1;
+    //   top: 0;
+    //   left: 0;
+    //   z-index: -1;
+    //   border-radius: 3/18em;
+    //   transition: width 0.3s;
+    // }
 
     &:hover {
-      &:before {
-        width: 100%;
-      }
+      background-color: var(--primary);
     }
   }
 
@@ -190,10 +188,12 @@
   }
 
   .button-solid2 {
-    background-color: #10625e;
+    background-color: transparent;
+    border: 1px solid black;
     width: 180/18em;
-    &::before {
-      background: var(--primary);
+    color: black;
+    &:hover {
+      border: 1px solid var(--primary);
     }
   }
 
