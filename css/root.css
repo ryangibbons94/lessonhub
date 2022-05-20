@@ -388,6 +388,9 @@
   .dark {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(254deg) brightness(108%) contrast(100%);
   }
+  .dark:hover {
+    filter: invert(39%) sepia(90%) saturate(401%) hue-rotate(128deg) brightness(87%) contrast(96%);
+  }
   .mobile-wrapper img {
     height: 3.9em;
     margin-top: 0.25em;
@@ -537,8 +540,14 @@
   .navbar-menu .nav-logo:before {
     display: none;
   }
+  .navbar-menu .nav-logo .light:hover {
+    filter: invert(39%) sepia(90%) saturate(401%) hue-rotate(128deg) brightness(87%) contrast(96%);
+  }
   .navbar-menu .nav-logo .dark {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(254deg) brightness(108%) contrast(100%);
+  }
+  .navbar-menu .nav-logo .dark:hover {
+    filter: invert(39%) sepia(90%) saturate(401%) hue-rotate(128deg) brightness(87%) contrast(96%);
   }
   .navbar-menu .nav-logo img {
     height: 4em;
