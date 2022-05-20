@@ -20,7 +20,7 @@
     align-items: center;
   }
   .dark-mode-button:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 1.75em;
@@ -41,13 +41,13 @@
   }
   .dark-mode-button .moon {
     transform: translateY(0px);
-    transition: .3s ease;
+    transition: 0.3s ease;
     opacity: 1;
     visibility: visible;
   }
   .dark-mode-button .sun {
     transform: translateY(30px);
-    transition: .3s ease;
+    transition: 0.3s ease;
     opacity: 0;
     visibility: hidden;
   }
@@ -72,7 +72,7 @@
     align-items: center;
   }
   .dark-mode-group p {
-    font-size: .7em !important;
+    font-size: 0.7em !important;
     text-align: center;
     color: #fff;
   }
@@ -105,11 +105,11 @@
   body.dark-mode h2,
   body.dark-mode p {
     color: #fff;
-    opacity: .9;
+    opacity: 0.9;
   }
   body.dark-mode p {
     color: #fff !important;
-    opacity: .9;
+    opacity: 0.9;
   }
   body.dark-mode h3 {
     color: var(--primary);
@@ -119,18 +119,18 @@
   }
   body.dark-mode .top-dark-mode-button .moon {
     transform: translateY(-30px);
-    transition: .3s ease;
+    transition: 0.3s ease;
     opacity: 0;
     visibility: hidden;
   }
   body.dark-mode .top-dark-mode-button .sun {
     transform: translateY(0);
-    transition: .3s ease;
+    transition: 0.3s ease;
     opacity: 1;
     visibility: visible;
   }
   body.dark-mode .dark {
-    display: block;
+    display: none;
     opacity: 1;
     z-index: 1;
   }
@@ -144,9 +144,9 @@
   body.dark-mode .hamburger-inner::before,
   body.dark-mode .hamburger-inner::after {
     background: #fff;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
   body.dark-mode .hamburger-inner {
     background: #fff;
