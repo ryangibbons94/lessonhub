@@ -483,6 +483,19 @@ main {
       left: 100%;
     }
   }
+  .discover .list-items-entire-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .discover .list-items-entire-list .list-item i {
+    margin-right: 1em;
+    font-size: 2em;
+  }
+  .discover .list-items-entire-list .buttons {
+    display: flex;
+  }
 }
 /* Tablet */
 @media only screen and (min-width: 48em) {
@@ -536,6 +549,9 @@ main {
   .discover .list-items-entire-list .list-item i {
     margin-right: 1em;
     font-size: 2em;
+  }
+  .discover .list-items-entire-list .buttons {
+    display: flex;
   }
 }
 /* Small Desktop */

@@ -44,10 +44,22 @@
     color: #fff;
   }
   body.dark-mode #hero .button-solid {
-    background: var(--darkPrimary);
+    background: white;
+    color: black;
   }
-  body.dark-mode #hero .button-solid:before {
-    background: var(--tint);
+  body.dark-mode #hero .button-solid:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  body.dark-mode #hero .button-solid2 {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  body.dark-mode #hero .button-solid2:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
   }
   body.dark-mode #services .service {
     background: var(--darkPrimary);

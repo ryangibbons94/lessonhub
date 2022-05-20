@@ -155,7 +155,9 @@
     color: black;
   }
   .button-solid2:hover {
+    background-color: transparent;
     border: 1px solid var(--primary);
+    color: var(--primary);
   }
   .button-transparent {
     display: inline-block;
