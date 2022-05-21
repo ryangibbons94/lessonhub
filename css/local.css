@@ -279,13 +279,15 @@ main {
 /*-- -------------------------- -->
 <---           About            -->
 <--- -------------------------- -*/
-/* Mobile */
 @media only screen and (min-width: 0em) {
   .about {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+  }
+  .about img {
+    display: block;
   }
   .about .left {
     display: flex;
@@ -301,9 +303,58 @@ main {
   }
   .about .right h2.sectionTitle {
     text-align: center;
+    margin-bottom: 0;
   }
   .about .right p {
     max-width: 500px;
+  }
+  .about .animated-bar {
+    background-color: var(--primary);
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    width: 175px;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+  }
+  .about .animated-bar::after {
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: barAnimation;
+    -webkit-animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: white;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 12px;
+  }
+  @keyframes barAnimation {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  .about .list-items-entire-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .about .list-items-entire-list .list-item i {
+    margin-right: 1em;
+    font-size: 2em;
+  }
+  .about .list-items-entire-list .buttons {
+    display: flex;
   }
 }
 /* Tablet */
@@ -312,8 +363,54 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
   }
+  .about img {
+    display: block;
+  }
+  .about .left {
+    position: relative;
+  }
+  .about .left:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 70%;
+    width: 60%;
+    background: var(--primary);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .about .left:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 170%;
+    width: 150%;
+    background: url("/images/content-circles.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    top: -18.75em;
+    left: 2.5em;
+    z-index: -2;
+  }
   .about .right {
     padding: 2em;
+  }
+  .about .list-items-entire-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .about .list-items-entire-list .list-item i {
+    margin-right: 1em;
+    font-size: 2em;
+  }
+  .about .list-items-entire-list .buttons {
+    display: flex;
   }
 }
 /* Small Desktop */
@@ -346,9 +443,58 @@ main {
   }
   .save .right h2.sectionTitle {
     text-align: center;
+    margin-bottom: 0;
   }
   .save .right p {
     max-width: 500px;
+  }
+  .save .animated-bar {
+    background-color: var(--primary);
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    width: 175px;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+  }
+  .save .animated-bar::after {
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: barAnimation;
+    -webkit-animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: white;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 12px;
+  }
+  @keyframes barAnimation {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  .save .list-items-entire-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .save .list-items-entire-list .list-item i {
+    margin-right: 1em;
+    font-size: 2em;
+  }
+  .save .list-items-entire-list .buttons {
+    display: flex;
   }
 }
 /* Tablet */
@@ -357,14 +503,55 @@ main {
     flex-direction: row-reverse;
     justify-content: space-evenly;
   }
-  .save .left {
-    transform: scaleX(-1);
-  }
   .save img {
     display: block;
   }
+  .save .left {
+    position: relative;
+    transform: scaleX(-1);
+  }
+  .save .left:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 70%;
+    width: 60%;
+    background: var(--primary);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .save .left:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 170%;
+    width: 150%;
+    background: url("/images/content-circles.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    top: -18.75em;
+    left: 2.5em;
+    z-index: -2;
+  }
   .save .right {
     padding: 2em;
+  }
+  .save .list-items-entire-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .save .list-items-entire-list .list-item i {
+    margin-right: 1em;
+    font-size: 2em;
+  }
+  .save .list-items-entire-list .buttons {
+    display: flex;
   }
 }
 /* Small Desktop */
@@ -372,7 +559,6 @@ main {
 /*-- -------------------------- -->
 <---           share             -->
 <--- -------------------------- -*/
-/* Mobile */
 @media only screen and (min-width: 0em) {
   .share {
     display: flex;
@@ -397,9 +583,58 @@ main {
   }
   .share .right h2.sectionTitle {
     text-align: center;
+    margin-bottom: 0;
   }
   .share .right p {
     max-width: 500px;
+  }
+  .share .animated-bar {
+    background-color: var(--primary);
+    content: "";
+    display: block;
+    height: 4px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    width: 175px;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+  }
+  .share .animated-bar::after {
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: barAnimation;
+    -webkit-animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: white;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 12px;
+  }
+  @keyframes barAnimation {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  .share .list-items-entire-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .share .list-items-entire-list .list-item i {
+    margin-right: 1em;
+    font-size: 2em;
+  }
+  .share .list-items-entire-list .buttons {
+    display: flex;
   }
 }
 /* Tablet */
@@ -411,8 +646,51 @@ main {
   .share img {
     display: block;
   }
+  .share .left {
+    position: relative;
+  }
+  .share .left:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 70%;
+    width: 60%;
+    background: var(--primary);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .share .left:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 170%;
+    width: 150%;
+    background: url("/images/content-circles.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    top: -18.75em;
+    left: 2.5em;
+    z-index: -2;
+  }
   .share .right {
     padding: 2em;
+  }
+  .share .list-items-entire-list .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .share .list-items-entire-list .list-item i {
+    margin-right: 1em;
+    font-size: 2em;
+  }
+  .share .list-items-entire-list .buttons {
+    display: flex;
   }
 }
 /* Small Desktop */
