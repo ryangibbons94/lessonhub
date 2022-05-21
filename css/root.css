@@ -720,6 +720,9 @@
     text-align: center;
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(254deg) brightness(108%) contrast(100%);
   }
+  #footer .left-section .logo:hover {
+    filter: invert(18%) sepia(87%) saturate(3346%) hue-rotate(168deg) brightness(103%) contrast(89%);
+  }
   #footer .left-section .logo img {
     width: 100%;
     height: auto;

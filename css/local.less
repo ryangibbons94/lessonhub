@@ -184,6 +184,12 @@ main {
       padding: 42/20em;
       width: 90%;
       margin: auto;
+      .button-solid {
+        &:hover {
+          background-color: black;
+          color: #fff;
+        }
+      }
 
       &:nth-of-type(2) {
         border-bottom: 1/20em solid rgba(73, 181, 176, 0.5);
@@ -199,11 +205,8 @@ main {
         .button-solid {
           color: #10625e;
 
-          &:before {
-            background: var(--primary);
-          }
-
           &:hover {
+            background-color: black;
             color: #fff;
           }
         }
