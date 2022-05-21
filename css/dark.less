@@ -232,11 +232,37 @@
     #footer {
       background: rgb(14, 13, 13);
       .button-solid {
-        background: var(--darkPrimary);
+        background: white;
+        color: black;
 
-        &:before {
-          background: var(--tint);
+        &:hover {
+          background-color: var(--primary);
+          color: white;
         }
+      }
+    }
+    .section {
+      .button-solid {
+        background: white;
+        color: black;
+
+        &:hover {
+          background-color: var(--primary);
+          color: white;
+        }
+      }
+      .button-solid2 {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid var(--primary);
+          color: var(--primary);
+        }
+      }
+      i {
+        color: white;
       }
     }
 

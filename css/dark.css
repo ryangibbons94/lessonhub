@@ -173,10 +173,33 @@
     background: #0e0d0d;
   }
   body.dark-mode #footer .button-solid {
-    background: var(--darkPrimary);
+    background: white;
+    color: black;
   }
-  body.dark-mode #footer .button-solid:before {
-    background: var(--tint);
+  body.dark-mode #footer .button-solid:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  body.dark-mode .section .button-solid {
+    background: white;
+    color: black;
+  }
+  body.dark-mode .section .button-solid:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  body.dark-mode .section .button-solid2 {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  body.dark-mode .section .button-solid2:hover {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+  }
+  body.dark-mode .section i {
+    color: white;
   }
   body.dark-mode #int-hero {
     background: url("../images/about-dark.jpg");
